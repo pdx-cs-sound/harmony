@@ -1,5 +1,9 @@
 #!/usr/bin/python3
-# Copyright (c) 2019 Bart Massey
+# Copyright © 2019 Bart Massey
+# [This program is licensed under the "MIT License"]
+# Please see the file LICENSE in the source
+# distribution of this software for license terms.
+
 
 import numpy as np
 import resamp
@@ -10,7 +14,7 @@ import wavio
 # Play it for 5 seconds.
 
 # Get some samples.
-samples = wavio.readwav("../loop.wav")
+samples = wavio.readwav("loop.wav")
 nsamples = len(samples)
 
 # Minimum and maximum expected fundamental frequency of
