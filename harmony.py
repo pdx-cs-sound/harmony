@@ -97,12 +97,5 @@ octaves_down = make_harmony(0.25)
 
 # Mix the notes.
 harmony = (root + third + octaves_down) / 3
-nharmony = len(harmony)
 
-# Replicate the harmony for 5 seconds.
-nreplica = 5 * 48000
-replica = np.array([0]*nreplica, dtype=np.float)
-for i in range(nreplica):
-    replica[i] = harmony[i % nharmony]
-
-wavio.writewav("harmony.wav", replica)
+wavio.writewav("harmony.wav", harmony)
